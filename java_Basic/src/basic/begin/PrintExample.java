@@ -39,6 +39,7 @@ public class PrintExample {
 		System.out.println(month + "월 " + day + "일은 " + anni + " 입니다.");
 		System.out.printf("%d월 %d일은 %s 입니다.\n", month, day, anni);
 		
+		
         //실수를 표현하는 서식문자 %f -> 기본 6자리까지 표현.
         //%.[자리수를 지정하는 숫자]f -> 원하는 자리수까지 표현.
         //%라는 문자 자체를 표현할 때는 %% 쓰시면 됩니다.
@@ -46,7 +47,6 @@ public class PrintExample {
 		double rate = 64.126;
 		System.out.printf("합격률: %.2f%%입니다.\n", rate);
 		
-
 	}
 
 }
