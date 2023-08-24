@@ -24,8 +24,8 @@ public class IfQuiz03 {
 		int c = sc.nextInt();
 		
 		int max=0, mid = 0, min = 0;
-	    
 		
+		/*
 		if(a > b) {
 			max = a;
 			min = b;
@@ -52,7 +52,7 @@ public class IfQuiz03 {
 				min = c;
 			}
 		}
-		
+		*/
 //		if(a>b && a>c) {
 //			max = a;
 //			mid = b > c ? b : c;
@@ -68,8 +68,10 @@ public class IfQuiz03 {
 //			mid = a > b ? a : b;
 //			min = a > b ? b : a;
 //		}
-		System.out.println("가장 큰 값 = " + max + " " + "중간 값 = " + mid 
-				+ " " + "가장 작은 값 = "+  min);
+		
+		
+//		System.out.println("가장 큰 값 = " + max + " " + "중간 값 = " + mid 
+//				+ " " + "가장 작은 값 = "+  min);
 	}
 
 	

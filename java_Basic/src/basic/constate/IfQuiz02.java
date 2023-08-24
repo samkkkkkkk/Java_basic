@@ -22,10 +22,10 @@ public class IfQuiz02 {
 			if(n==0) {
 				System.out.println("0입니다.");
 			}else {
-				System.out.println("7의 배수입니다.");
+				System.out.println(n + "은(는) 7의 배수입니다.");
 			}
 		}else {
-			System.out.println("7의 배수가 아닙니다.");
+			System.out.println(n + "은(는) 7의 배수가 아닙니다.");
 		}
 	}
 }

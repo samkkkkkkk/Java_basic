@@ -22,12 +22,18 @@ public class IfQuiz01 {
 		int b = sc.nextInt();
 		
 		if(a > b) {
-			System.out.printf("입력받은 수: %d, %d -> %d이(가) 큰 수 입니다.", 
-					a, b, a);
-		}else {
-			System.out.printf("입력받은 수: %d, %d -> %d이(가) 큰 수 입니다.", 
-					a, b, b);
+			System.out.printf("입력받은 수: %d, %d -> %d이(가) 큰 수 입니다."
+					, a, b, a);
+		}else if(a==b) {
+			System.out.printf("입력받은 수: %d, %d -> 같은 수 입니다."
+					, a, b);
 		}
+		else {
+			System.out.printf("입력받은 수: %d, %d -> %d이(가) 큰 수 입니다."
+					, a, b, b);
+		}
+		
+		sc.close();
 		
 	}
 
