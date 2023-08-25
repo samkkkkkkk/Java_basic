@@ -20,26 +20,29 @@ public class WhileQuiz02 {
 		
 		Scanner sc = new Scanner(System.in);
 		
-		System.out.print("정수를 두개 입력해 주세요. ");
+		System.out.print("정수 1: ");
 		int x = sc.nextInt();
+		System.out.print("정수 2: ");
 		int y = sc.nextInt();
 		
 		int total = 0;
-		int t;
+		int z;
 		
 		if(x>y) { // x가 y보다 큰 경우 x와 y의 값을 서로 바꿔준다.
-			t = y;
+			z = y;
 			y = x;
-			x = t;
+			x = z;
 		}
-			
-		while(x<=y) {
+		
+		System.out.print(x);
+		
+		while(x <= y) {
 			
 			 total += x;
 			 x++;
 		}
 		
-		System.out.println(total);
+		System.out.printf("부터 %d까지의 누적합계: %d\n", y, total);
 		
 		sc.close();
 	}

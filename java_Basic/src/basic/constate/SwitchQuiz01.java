@@ -15,14 +15,18 @@ public class SwitchQuiz01 {
 		
 		Scanner sc = new Scanner(System.in);
 		
-		System.out.print("정수 하나를 입력해 주세요. "); //첫번째 정수 입력
+		System.out.print("정수 1: "); //첫번째 정수 입력
 		int n1 = sc.nextInt();
-		System.out.print("연산자를 입력해주세요 "); // 연산자를 문자열로 받는다.
+		
+		System.out.print("연산자를 입력해주세요. [+, -, *, /, %]:  "); // 연산자를 문자열로 받는다.
 		String oper = sc.next();
-		System.out.print("정수 하나를 입력해 주세요. "); //두번째 정수 입력
+		
+		System.out.print("정수 2: "); //두번째 정수 입력
 		int n2 = sc.nextInt();
+			
 		
 		switch(oper) { // 문자열로 받은 연산자에 따라 계산 식을 다르게 입력해 준다.
+		
 		case "+":
 			System.out.printf("%d %s %d = %d 입니다.\n"
 					, n1, oper, n2, n1 + n2);
@@ -36,6 +40,10 @@ public class SwitchQuiz01 {
 					, n1, oper, n2, n1 * n2);
 			break;
 		case "/":
+			if(n2 == 0) {
+				System.out.println("정수 2에는 0이 아닌 수를 입력해주세요.");
+				break;
+			}
 			System.out.printf("%d %s %d = %d 입니다.\n"
 					, n1, oper, n2, n1 / n2);
 			break;
@@ -46,6 +54,7 @@ public class SwitchQuiz01 {
 		default:
 			System.out.println("연산자가 잘못 입력되었습니다.");
 		}
+
 		
 		sc.close();
 		

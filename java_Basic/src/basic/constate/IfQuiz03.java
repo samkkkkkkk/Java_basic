@@ -25,53 +25,53 @@ public class IfQuiz03 {
 		
 		int max=0, mid = 0, min = 0;
 		
-		/*
-		if(a > b) {
-			max = a;
-			min = b;
-			if(max < c) {
-				max = c;
-				mid = a;
-			}else if(c > b) {
-				mid = c;
-			}else {
-				mid = b;
-				min = c;
-			}
 		
-		}else {
-			max = b;
-			min = a;
-			if(max < c) {
-				max = c;
-				mid = b;
-			}else if(c >a) {
-				mid = c;
-			}else {
-				mid = a;
-				min = c;
-			}
-		}
-		*/
-//		if(a>b && a>c) {
+//		if(a > b) {
 //			max = a;
-//			mid = b > c ? b : c;
-//			min = b > c ? c : b;
-//		}
-//		else if(a<b && b>c) {
+//			min = b;
+//			if(max < c) {
+//				max = c;
+//				mid = a;
+//			}else if(c > b) {
+//				mid = c;
+//			}else {
+//				mid = b;
+//				min = c;
+//			}
+//		
+//		}else {
 //			max = b;
-//			mid = a > c ? a : c;
-//			min = a > c ? c : a;
-//		}
-//		else if(c>a && b<c) {
-//			max = c;
-//			mid = a > b ? a : b;
-//			min = a > b ? b : a;
+//			min = a;
+//			if(max < c) {
+//				max = c;
+//				mid = b;
+//			}else if(c >a) {
+//				mid = c;
+//			}else {
+//				mid = a;
+//				min = c;
+//			}
 //		}
 		
+		if(a>b && a>c) {
+			max = a;
+			mid = b > c ? b : c;
+			min = b > c ? c : b;
+		}
+		else if(b>a && b>c) {
+			max = b;
+			mid = a > c ? a : c;
+			min = a > c ? c : a;
+		}
+		else{
+			max = c;
+			mid = a > b ? a : b;
+			min = a > b ? b : a;
+		}
 		
-//		System.out.println("가장 큰 값 = " + max + " " + "중간 값 = " + mid 
-//				+ " " + "가장 작은 값 = "+  min);
+		
+		System.out.println("가장 큰 값 = " + max + " " + "중간 값 = " + mid 
+				+ " " + "가장 작은 값 = "+  min);
 	}
 
 	

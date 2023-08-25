@@ -17,28 +17,49 @@ public class IfQuiz0303 {
 		
 		Scanner sc = new Scanner(System.in);
 		
-		System.out.println("정수 3개를 입력하세요: ");
-		int max = sc.nextInt();
-		int mid = sc.nextInt();
-		int min = sc.nextInt();
+		System.out.print("정수1: ");
+		int num1 = sc.nextInt();
+		System.out.print("정수2: ");
+		int num2 = sc.nextInt();
+		System.out.print("정수3: ");
+		int num3 = sc.nextInt();
 		
-		int tempt = 0;
+		int max, mid, min;
 		
-		if(max > mid && max > min) {
-			
-			tempt = mid;
-			mid = min;
-			min = tempt;
-		}else if(mid > max && mid > min) {
-			tempt = max;
-			max = mid;
-			min = tempt;
+		if(num1 > num2 && num1 > num3) { //num1 이 max다!
+			max = num1;
+			if(num2>num3) {
+				mid = num2;
+				min = num3;
+			}
+			else {
+				mid = num3;
+				min = num2;
+			}			
+		}else if(num2 > num1 && num3 > num1) {
+			max = num2;
+			if(num1 > num3) {
+				mid = num1;
+				min = num3;
+			}else {
+				mid = num3;
+				min = num1;
+			}
+		}else { //num3가 max다!
+			max = num3;
+			if(num1 > num2) {
+				mid = num1; min = num2;
+			}else {
+				mid = num2; min = num1;
+			}
 		}
 		
+		System.out.println("------------------------");		
+		System.out.println("최대값: " + max);		
+		System.out.println("중간값: " + mid);		
+		System.out.println("최소값: " + min);		
 		
-		
-		
-		
+		sc.close();
 	}
 
 }
