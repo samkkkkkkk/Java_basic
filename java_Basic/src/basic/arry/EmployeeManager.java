@@ -257,7 +257,7 @@ public class EmployeeManager {
 								ages[j] = ages[j+1];
 								departments[j] = departments[j+1];
 							}
-							userNums[count-1] = null;	// 삭제후 count번째 배열에 null값으로 초기화	
+							userNums[count-1] = null;	// 삭제후 count-1번째 배열에 null값으로 초기화	
 							names[count-1] = null;
 							ages[count-1] = 0;
 							departments[count-1] = null;
