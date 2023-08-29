@@ -1,6 +1,6 @@
 package basic.constate;
 
-import java.io.InputStream;
+
 import java.util.Scanner;
 
 public class IfQuiz03 {
@@ -72,6 +72,8 @@ public class IfQuiz03 {
 		
 		System.out.println("가장 큰 값 = " + max + " " + "중간 값 = " + mid 
 				+ " " + "가장 작은 값 = "+  min);
+		
+		sc.close();
 	}
 
 	

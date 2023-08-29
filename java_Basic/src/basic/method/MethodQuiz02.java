@@ -14,7 +14,7 @@ public class MethodQuiz02 {
 
 	static void push(String newfood) {
 		
-		String[] temp = new String[foods.length];
+		String[] temp = new String[foods.length + 1];
 		for(int i=0; i<foods.length; i++) {
 			temp[i] = foods[i];
 		}
@@ -75,7 +75,7 @@ public class MethodQuiz02 {
 
 	//6. 특정 음식 수정 메서드 (modify -> void)
 	//매개값으로 전달한 인덱스의 값을 전달한 값으로 수정해 주는 메서드
-	static void modif(int targetIdx, String newfood) {
+	static void modify(int targetIdx, String newfood) {
 		foods[targetIdx] = newfood;
 	}
 	public static void main(String[] args) {
@@ -102,7 +102,7 @@ public class MethodQuiz02 {
 		System.out.println("양념치킨의 존재 여부: " + include("양념치킨"));
 
 		//2번 인덱스 데이터를 닭갈비로 수정
-		modif(2, "닭갈비");
+		modify(2, "닭갈비");
 		printFood();
 
 	}

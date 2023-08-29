@@ -27,5 +27,7 @@ public class IfQuiz02 {
 		}else {
 			System.out.println(n + "은(는) 7의 배수가 아닙니다.");
 		}
+		
+		sc.close();
 	}
 }

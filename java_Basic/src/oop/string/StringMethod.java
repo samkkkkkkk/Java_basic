@@ -26,10 +26,10 @@ public class StringMethod {
 		
 		//indexOf(str): 해당 문자가 있는 인덱스를 반환
 		//해당 문자가 존재하지 않으면 -1을 리턴
-		int idx1 = str.indexOf("1");
+		int idx1 = str.indexOf("a");
 		System.out.println("idx1: " + idx1);
 		
-		int idx2 = str.lastIndexOf("1");
+		int idx2 = str.lastIndexOf("a");
 		System.out.println("idx2: " + idx2);
 		
 		//여러 문자를 전달하면 시작 인덱스를 알려줍니다.

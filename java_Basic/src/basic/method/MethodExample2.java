@@ -23,7 +23,7 @@ package basic.method;
 
 public class MethodExample2 {
 
-	//x부터 y까지의 누적합계를 구하는 메서드
+	//start부터 end까지의 누적합계를 구하는 메서드
 	static int calcRangeTotal(int start, int end) {
 		int total = 0;
 		for(int i=start; i<=end; i++) {
@@ -52,6 +52,22 @@ public class MethodExample2 {
 //		}
 		for(int i=0; i<nums.length; i++) {
 			total += nums[i];
+		}
+		return total;
+	}
+	
+	static int calcal(int[] number) {
+		int total = 0;
+		for(int i=0; i<number.length; i++) {
+			total += number[i];
+		}
+		return total;
+	}
+	
+	static int calcal2(int... number) {
+		int total = 0;
+		for(int i=0; i<number.length; i++) {
+			total += number[i];
 		}
 		return total;
 	}
@@ -86,6 +102,12 @@ public class MethodExample2 {
 		//배열로 포장해서 보내도 됩니다.
 		sum = calcNumberTotal2(1,2,3,4,5,6,7);
 		System.out.println("누적합: " + sum);
+		
+		sum = calcal(new int[]{1, 2, 3});
+		System.out.println(sum);
+		
+		sum = calcal2(1,2,3);
+		System.out.println(sum);
 		
 				
 	}

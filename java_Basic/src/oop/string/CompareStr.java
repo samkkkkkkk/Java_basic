@@ -42,7 +42,7 @@ public class CompareStr {
 		System.out.println("equals의 결과: " + (password.equals(kim.pw)));
 		
 		
-		
+		sc.close();
 		
 	}
 

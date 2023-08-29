@@ -31,7 +31,8 @@ public class StringQuiz01 {
 			}
 
 		}
-
+		
+		sc.close();
 
 	}
 
