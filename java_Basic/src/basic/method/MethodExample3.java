@@ -116,9 +116,7 @@ public class MethodExample3 {
 		
 		
 		divide(20,0);
-						
-		
-		
+								
 		
 	}
 
