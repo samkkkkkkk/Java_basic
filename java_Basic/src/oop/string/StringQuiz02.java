@@ -23,15 +23,17 @@ public class StringQuiz02 {
 			
 			num = num.replace("-", "");
 			System.out.println(num.charAt(6));
+			
 		
-			if(num.length()!=13) {
+			if(num.length() != 13) {
 				System.out.println("주민등록번호 13자리를 입력해주세요.");
 			}else {
-				if(num.charAt(6) == 1 || num.charAt(6) == 3) {
+				if(num.charAt(6) == '1' || num.charAt(6) == '3') {
 					
 					System.out.println("남자입니다.");
 					break;
-				}else if(num.charAt(6) == 2 || num.charAt(6) == 2 ) {
+					
+				}else if(num.charAt(6) == '2' || num.charAt(6) == '4' ) {
 					System.out.println("여자입니다.");
 					break;
 				}
