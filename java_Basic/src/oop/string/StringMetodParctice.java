@@ -31,6 +31,8 @@ public class StringMetodParctice {
 		System.out.println(lower);
 		System.out.println(upper);
 		
+		String name = "                   홍길동                    ";
+		System.out.println(name.trim());
 	}
 
 }
