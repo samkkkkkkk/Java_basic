@@ -2,6 +2,7 @@ package oop.abs.good;
 
 public class SeoulStore extends HeadStore{
 
+	
 	@Override
 	public void orderApple() {
 		System.out.println("사과쥬스의 가격은 3000원 입니다.");
