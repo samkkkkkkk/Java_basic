@@ -1,5 +1,7 @@
 package oop.static_.singleton;
 
+import javax.swing.plaf.synth.SynthOptionPaneUI;
+
 public class Singleton {
 	
 	
@@ -9,6 +11,7 @@ public class Singleton {
 	 1.외부에서 이 클래스의 객체를 생성하지 못하게 생성자를 단 1개만
 	 선언하고, private 접근 제한을 붙임.
 	 */
+	
 	private Singleton() {
 		System.out.println("객체가 생성됨!");
 	}
@@ -20,7 +23,7 @@ public class Singleton {
 	//3. 외부에서 이 클래스의 객체를 요구할 시, 2번에서 미리 만들어 놓은
 	//단 하나의 객체의 주소값을 공개된 메서드를 통해 리턴합니다.
 	public static Singleton getInstance() {
-		return s;		
+		return s;
 	}
 	
 	

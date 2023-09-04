@@ -12,6 +12,8 @@ public class MainClass {
 		s1.method1();
 		s1.method2();
 		
+		
+		
 		Singleton s2 = Singleton.getInstance();
 		Singleton s3 = Singleton.getInstance();
 		Singleton s4 = Singleton.getInstance();
