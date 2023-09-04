@@ -1,6 +1,6 @@
 package oop.abs.quiz;
 
-public abstract class Shape {
+public abstract class ShapePrac {
 	
 	/*
     1. 도형의 이름을 저장할 수 있는 변수(name)을 private으로 선언.
@@ -15,12 +15,14 @@ public abstract class Shape {
 	
 	private String name;
 	
-	public Shape() {}
+	public ShapePrac() {}
 
-	public Shape(String name) {
+	public ShapePrac(String name) {
 		super();
 		this.name = name;
 	}
+	
+	public abstract double getArea();
 
 	public String getName() {
 		return name;
@@ -30,7 +32,10 @@ public abstract class Shape {
 		this.name = name;
 	}
 	
-	public abstract double getArea();
+	
+	
+	
+	
 	
 	
 }
