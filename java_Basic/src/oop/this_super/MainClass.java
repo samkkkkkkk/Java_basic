@@ -1,5 +1,8 @@
 package oop.this_super;
 
+import java.util.HashSet;
+import java.util.Set;
+
 public class MainClass {
 
 	public static void main(String[] args) {
@@ -36,7 +39,18 @@ public class MainClass {
 		System.out.println("---------------------------");
 		Hunter h1 = new Hunter("냥꾼짱짱맨");
 		h1.characterInfo();
-
+		
+		String s1 = "a1";
+		String s2 = new String("a1");
+		String s3 = new String("a1");
+		
+		System.out.println(s1 == s2);
+		System.out.println(s1.equals(s2));
+		System.out.println(s1.hashCode() == s2.hashCode());
+		System.out.println(s2.hashCode());
+		System.out.println(s3.hashCode());
+		
+		
 	}
 
 }
