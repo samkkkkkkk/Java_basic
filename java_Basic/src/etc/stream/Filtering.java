@@ -52,14 +52,14 @@ public class Filtering {
                 .filter(dish -> dish.getCalories() > 300)
                 .skip(2) // 맨 앞 2개 제외시킴
                 .collect(Collectors.toList())
-                .forEach(d -> System.out.println(d));
+                .forEach(System.out::println);
 
         System.out.println("========== 메뉴 목록에서 처음 등장하는 2개의 생선요리 필터링 ==========");
         menuList.stream()
                 .filter(d -> d.getType() == Dish.Type.FISH)
                 .limit(2)
                 .collect(Collectors.toList())
-                .forEach(d -> System.out.println(d));
+                .forEach(System.out::println);
 
         List<Integer> numbers = List.of(1, 2, 1, 3, 3, 2, 4, 4, 5, 6);
 
